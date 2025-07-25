@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Stock AI Predictor</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <h1>📈 AI Stock Predictor</h1>
   <label for="ticker">Enter Stock Ticker:</label>
   <input type="text" id="ticker" value="AAPL">
-  <button onclick="predict()">Predict Next Hour Price</button>
-  <p id="predictionOutput">Prediction: ...</p>
+  <button onclick="predict()" id="predictBtn">Predict Next Hour Price</button>
+  <p id="predictionOutput">Loading libraries...</p>
   <canvas id="stockChart" width="800" height="400"></canvas>
   <script src="main.js"></script>
 </body>
